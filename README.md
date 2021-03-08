@@ -1,70 +1,162 @@
-# Getting Started with Create React App
+# YEMStats-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> YEMStats, an acronym for "You Enhoy My Stats" (after famous Phish song) is a full-stack MERN application that enables concert go-ers to track the live performances that they have attended and listened to, supply their rating, and view their statistics.  Specifically designed for fan's of the band Phish, users can create posts on individual shows, setlists or songs and view the comments left by others on the same subject.  Future updates will allow users to view their detailed statistics, compare stats with others, show off their band loyalty with acheivable badges on their profile pages, and even check-in and locate their friends real-time at the venue on the day of the show.
 
-## Available Scripts
+> A community for live music fans to share their memories and coordinate future events with others like themselves.
 
-In the project directory, you can run:
+> YEMStats, Phish, live music, stat tracking, helping friendly reprise, HFApp
 
-### `npm start`
+[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-ics-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-7/7-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Content
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Dependencies](#dependencies)
+- [Wire Frames](#wireframes)
+- [ERD](#ERD)
+- [User Stories](#userstories)
+- [Team](#team)
+- [License](#license)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Dependencies
 
-### `npm run build`
+#### YEMStats - App
+-
+#### YEMStats - API
+- "body-parser" v1.19.0
+- "express": v4.17.1
+- "mongodb": v3.6.4
+- "mongoose": v5.11.19
+- "nodemon": v2.0.7 (dev)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
+## Wire Frames
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## User Stories
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> GIF Tools
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
+- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Recordit**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
 
-## Learn More
+**ttystudio**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ERD
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Example (Optional)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```javascript
+// code away!
 
-### Advanced Configuration
+let generateProject = project => {
+  let code = [];
+  for (let js = 0; js < project.length; js++) {
+    code.push(js);
+  }
+};
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- All the `code` required to get started
+- Images of what it should look like
 
-### `npm run build` fails to minify
+### Clone
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
+
+### Setup
+
+- If you want more syntax highlighting, format your code like this:
+
+> update and install this package first
+
+```shell
+$ brew update
+$ brew install fvcproductions
+```
+
+> now install npm and bower packages
+
+```shell
+$ npm install
+$ bower install
+```
+
+- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
+
+---
+
+## Features
+## Usage (Optional)
+## Documentation (Optional)
+## Tests (Optional)
+
+- Going into more detail on code and technologies used
+- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
+
+---
+
+## Contributing
+
+> To get started...
+
+### Step 1
+
+- **Option 1**
+    - 🍴 Fork this repo!
+
+- **Option 2**
+    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
+
+### Step 2
+
+- **HACK AWAY!** 🔨🔨🔨
+
+### Step 3
+
+- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
+
+---
+
+## Creator
+
+|                 <a href="https://git.generalassemb.ly/nicholasgacicia" target="_blank">**Nicholas Gacicia**</a>                 |                 <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a>                 |                 <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a>                 |
+| :--------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: |
+| [![Nicholas Gacicia](https://i.imgur.com/LcK8J3a.jpg?1)](https://git.generalassemb.ly/nicholasgacicia) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) |
+|         <a href="https://git.generalassemb.ly/nicholasgacicia" target="_blank">`git.generalassemb.ly/nicholasgacicia`</a>         |         <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a>         |         <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a>         |
+
+---
+
+## FAQ
+
+- **How do I do *specifically* so and so?**
+    - No problem! Just do this.
+
+---
+
+## License
+
+[![License](http://img.shields.io/:license-ics-blue.svg?style=flat-square)](http://badges.ics-license.org)
+
+- **[ICS license](http://opensource.org/licenses/ics-license.php)**
+- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.

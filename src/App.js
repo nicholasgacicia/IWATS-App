@@ -1,20 +1,20 @@
-import { Link } from 'react-router-dom'
 import routes from './config/routes';
+import NavBar from './components/Universal/NavBar';
+// import Footer from './components/Universal/Footer';
 
 import './App.css';
+
 
 function App() {
   return (
     <div>
-      <nav>
-        <Link to='/'>Home</Link>{'  '}
-        <Link to='/shows'>Shows</Link>{'  '}
-        <Link to='/addshow'>Add Show</Link>{'  '}
-        <Link to='/myshows'>My Shows</Link>
-      </nav>
+      <NavBar />
+
       <div>
         {routes}
       </div>
+
+      {/* <Footer /> */}
     </div>
   );
 }

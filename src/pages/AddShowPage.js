@@ -1,13 +1,14 @@
 import React from 'react';
+
 class AddShowPage extends React.Component {
   state = {
     showdate: '',
     artist: '',
-    link: '',
-    location: '',
     venue: '',
-    shownotes: '',
+    location: '',
     tourname: '',
+    link: '',
+    shownotes: '',
   };
 
   handleChange = (event) => {
@@ -61,12 +62,12 @@ class AddShowPage extends React.Component {
             onChange={this.handleChange}
           /><br />
 
-          <label htmlFor="link">Phish.Net URL: </label><br />
+          <label htmlFor="venue">Venue: </label><br />
           <input
             type="text"
-            id="link"
-            name="link"
-            value={this.state.link}
+            id="venue"
+            name="venue"
+            value={this.state.venue}
             onChange={this.handleChange}
           /><br />
 
@@ -79,12 +80,21 @@ class AddShowPage extends React.Component {
             onChange={this.handleChange}
           /><br />
 
-          <label htmlFor="venue">Venue: </label><br />
+          <label htmlFor="tourname">Tour: </label><br />
           <input
             type="text"
-            id="venue"
-            name="venue"
-            value={this.state.venue}
+            id="tourname"
+            name="tourname"
+            value={this.state.tourname}
+            onChange={this.handleChange}
+          /><br />
+
+          <label htmlFor="link">Phish.Net URL: </label><br />
+          <input
+            type="text"
+            id="link"
+            name="link"
+            value={this.state.link}
             onChange={this.handleChange}
           /><br />
 
@@ -94,15 +104,6 @@ class AddShowPage extends React.Component {
             id="shownotes"
             name="shownotes"
             value={this.state.shownotes}
-            onChange={this.handleChange}
-          /><br />
-
-          <label htmlFor="tourname">Tour: </label><br />
-          <input
-            type="text"
-            id="tourname"
-            name="tourname"
-            value={this.state.tourname}
             onChange={this.handleChange}
           /><br />
 

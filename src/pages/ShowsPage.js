@@ -19,12 +19,6 @@ class ShowsPage extends React.Component {
   }
 
   handleDeleteShow = (showId) => {
-    // console.log(showId);
-    // let confirmed = alert('Are you sure you want to delete this show???');
-    // if (confirmed) {
-    //   console.log(`Confirmed. Deleted show ${showId}`);
-    // }
-
     fetch(`http://localhost:4000/api/shows/${showId}`, {
       method: 'DELETE'
     })

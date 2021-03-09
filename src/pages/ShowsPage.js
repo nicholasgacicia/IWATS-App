@@ -18,11 +18,15 @@ class ShowsPage extends React.Component {
       .catch()
   }
 
+  handleDeleteShow = (showId) => {
+    console.log(showId);
+  };
+
   render() {
     return (
       <div>
         <h1>Shows Index</h1>
-        <ShowsList shows={this.state.shows} />
+        <ShowsList shows={this.state.shows} deleteShow={this.handleDeleteShow} />
       </div>
     );
   }

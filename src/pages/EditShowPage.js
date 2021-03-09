@@ -1,5 +1,6 @@
 import React from 'react';
-class AddShowPage extends React.Component {
+
+class EditShowPage extends React.Component {
   state = {
     showdate: '',
     artist: '',
@@ -10,6 +11,23 @@ class AddShowPage extends React.Component {
     tourname: '',
   };
 
+  componentDidMount() {
+    // match.params is passed to EditGamePage props by react-router-dom
+    // You can console.log(this.props) in the render method below to see all the props passed to the EditGamePage container component.
+    // the id param is set in the edit route in our config/routes.js
+    console.log('Getting Show information')
+    fetch(`http://localhost:4000/api/shows/${this.props.match.params.id}`)
+      .then((res) => {
+        console.log(res);
+        return res.json();
+      })
+      .then((jsonData) => {
+        console.log(jsonData);
+        this.setState(jsonData)
+      })
+      .catch((err) => console.log(err));
+  }
+
   handleChange = (event) => {
     this.setState({
       [event.target.id]: event.target.value
@@ -18,29 +36,21 @@ class AddShowPage extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    // console.log(this.state);
-    fetch('http://localhost:4000/api/shows', {
-      method: 'POST',
+    fetch(`http://localhost:4000/api/shows/${this.props.match.params.id}`, {
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(this.state),
     })
-      .then((res) => {
-        console.log(res);
-        return res.json();
-      })
-      .then((jsonData) => {
-        console.log(jsonData);
-        this.props.history.push('/shows');
-      })
+      .then(() => this.props.history.push('/shows'))
       .catch((err) => console.log(err));
   };
 
   render() {
     return (
       <div>
-        <h1>Add New/Missing Show</h1>
+        <h1>Edit Show {this.state.showdate}</h1>
 
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="showdate">Date: </label><br />
@@ -106,7 +116,7 @@ class AddShowPage extends React.Component {
             onChange={this.handleChange}
           /><br />
 
-          <button type="submit">Add Show</button>
+          <button type="submit">Edit Show</button>
         </form>
 
       </div>
@@ -114,4 +124,4 @@ class AddShowPage extends React.Component {
   }
 }
 
-export default AddShowPage;
+export default EditShowPage;

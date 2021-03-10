@@ -36,7 +36,6 @@ function LoginPage({ setToken }) {
       .then((data) => {
         setToken(data.token);  // ~Update authState in App
         localStorage.setItem('token', data.token);  // ~Store Token in localStorage
-        // TODO remove item (token)
         history.push('/myshows');  // ~Redirect myshows page
       })
       .catch((err) => setError(err.message));

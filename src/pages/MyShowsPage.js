@@ -8,7 +8,7 @@ function MyShowsPage() {
       token: localStorage.getItem('token')
     };
 
-    console.log('Token = ', token);
+    // console.log('Token = ', token);
 
     if (token) {
       fetch('http://localhost:4000/api/users/myshows', {

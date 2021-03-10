@@ -4,12 +4,13 @@ class EditShowPage extends React.Component {
   state = {
     showdate: '',
     artist: '',
-    link: '',
-    location: '',
     venue: '',
-    shownotes: '',
+    location: '',
     tourname: '',
+    link: '',
+    shownotes: '',
   };
+
 
   componentDidMount() {
     // match.params is passed to EditGamePage props by react-router-dom
@@ -18,12 +19,12 @@ class EditShowPage extends React.Component {
     console.log('Getting Show information')
     fetch(`http://localhost:4000/api/shows/${this.props.match.params.id}`)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         return res.json();
       })
       .then((jsonData) => {
         console.log(jsonData);
-        this.setState(jsonData)
+        this.setState(jsonData);
       })
       .catch((err) => console.log(err));
   }
@@ -47,10 +48,14 @@ class EditShowPage extends React.Component {
       .catch((err) => console.log(err));
   };
 
+
+
   render() {
+    // let date = new Date(this.state.showdate).toDateString();
+    // console.log(this.props);
     return (
       <div>
-        <h1>Edit Show {this.state.showdate}</h1>
+        <h1>Edit Show - {this.state.showdate.split('T')[0]}</h1>
 
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="showdate">Date: </label><br />
@@ -71,12 +76,12 @@ class EditShowPage extends React.Component {
             onChange={this.handleChange}
           /><br />
 
-          <label htmlFor="link">Phish.Net URL: </label><br />
+          <label htmlFor="venue">Venue: </label><br />
           <input
             type="text"
-            id="link"
-            name="link"
-            value={this.state.link}
+            id="venue"
+            name="venue"
+            value={this.state.venue}
             onChange={this.handleChange}
           /><br />
 
@@ -89,12 +94,21 @@ class EditShowPage extends React.Component {
             onChange={this.handleChange}
           /><br />
 
-          <label htmlFor="venue">Venue: </label><br />
+          <label htmlFor="tourname">Tour: </label><br />
           <input
             type="text"
-            id="venue"
-            name="venue"
-            value={this.state.venue}
+            id="tourname"
+            name="tourname"
+            value={this.state.tourname}
+            onChange={this.handleChange}
+          /><br />
+
+          <label htmlFor="link">URL: </label><br />
+          <input
+            type="text"
+            id="link"
+            name="link"
+            value={this.state.link}
             onChange={this.handleChange}
           /><br />
 
@@ -104,15 +118,6 @@ class EditShowPage extends React.Component {
             id="shownotes"
             name="shownotes"
             value={this.state.shownotes}
-            onChange={this.handleChange}
-          /><br />
-
-          <label htmlFor="tourname">Tour: </label><br />
-          <input
-            type="text"
-            id="tourname"
-            name="tourname"
-            value={this.state.tourname}
             onChange={this.handleChange}
           /><br />
 

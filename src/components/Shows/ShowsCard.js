@@ -5,10 +5,8 @@ const ShowsCard = (props) => {
     token: localStorage.getItem('token')
   };
 
-  console.log('Token = ', token);
 
   function handleAttendShow() {
-    // console.log('Attend Show Clicked');
     fetch(`http://localhost:4000/api/users/${props.show._id}`, {
       method: 'PUT',
       headers: {
@@ -17,34 +15,25 @@ const ShowsCard = (props) => {
       body: JSON.stringify(token),
     })
       .then((res) => {
+        // console.log(res);
         return res.json();
+      })
+      .then((jsonData) => {
+        console.log(jsonData);
+        alert(jsonData.message);
       })
       .catch((err) => console.log(err));
   }
 
-  let date = new Date(props.show.showdate).toDateString();
+
+  // let date = new Date(props.show.showdate).toDateString();
   return (
     <>
-      <h4>{date} - {props.show.venue} - {props.show.location}</h4>
-
-      <div dangerouslySetInnerHTML={{ __html: props.show.shownotes }} />
+      <h4>{props.show.showdate.split('T')[0]} - {props.show.artist} - {props.show.venue} - {props.show.location}</h4>
+      {/* <div dangerouslySetInnerHTML={{ __html: props.show.shownotes }} /> */}
       <button onClick={() => props.deleteShow(props.show._id)}>Delete</button>{'  '}
       <Link to={`/editshow/${props.show._id}`}><button>Update</button></Link>{'  '}
-
-      {/* TODO Add show button functionality */}
-
-
-
       <button onClick={handleAttendShow}>Attended</button>{'  '}
-
-
-
-
-
-
-      <button>Listened</button>{'  '}
-      <button>Add to Playlist</button>{'  '}
-
       <hr />
     </>
   );

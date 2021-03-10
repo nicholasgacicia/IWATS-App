@@ -58,7 +58,7 @@ class EditShowPage extends React.Component {
             type="date"
             id="showdate"
             name="showdate"
-            value={this.state.showdate}
+            value={this.state.showdate.split('T')[0]}
             onChange={this.handleChange}
           /><br />
 

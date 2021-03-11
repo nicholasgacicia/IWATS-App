@@ -1,11 +1,14 @@
-import ShowsCard from './ShowsCard';
+// import ShowsCard from './ShowsCard';
+import ShowAccordian from './ShowAccordian';
 
 const GamesList = (props) => {
-  // TODO Sort by Date
-
   return props.shows.map((showsObj) => {
     return (
-      <ShowsCard key={showsObj._id} show={showsObj} deleteShow={props.deleteShow} />
+      <ShowAccordian
+        key={showsObj._id}
+        show={showsObj}
+        deleteShow={props.deleteShow}
+      />
     )
   });
 };

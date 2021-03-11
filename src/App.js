@@ -1,14 +1,15 @@
+import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Routes from './config/Routes';
-import MDBFooter from './components/universal/Footer';
+import Footer from './components/universal/Footer';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 
 const styles = {
   logoutButton: {
-    textDecoration: 'underline',
     cursor: 'pointer',
   }
 };
@@ -26,15 +27,15 @@ function App() {
 
   return (
     <div className="App">
-      <nav>
+      <nav className="navbar-nav text-center text-white p-2 m-auto">
         <ul>
-          <Link to='/'>Home</Link>{'  '}
-          <Link to='/shows'>Shows</Link>{'  '}
-          <Link to='/addshow'>Add Show</Link>{'  '}
-          <Link to='/myshows'>My Shows</Link>{'  '}
-          <Link to='/signup'>Signup</Link>{'  '}
-          <Link to='/login'>Login</Link>{'  '}
-          <Link to='/login'><span style={styles.logoutButton} onClick={handleLogout}>Logout</span></Link>
+          <Link className="mx-lg-5" to='/'>Home</Link>{'  '}
+          <Link className="mx-lg-5" to='/shows'>Shows</Link>{'  '}
+          <Link className="mx-lg-5" to='/addshow'>Add Show</Link>{'  '}
+          <Link className="mx-lg-5" to='/myshows'>My Shows</Link>{'  '}
+          <Link className="mx-lg-5" to='/signup'>Signup</Link>{'  '}
+          <Link className="mx-lg-5" to='/login'>Login</Link>{'  '}
+          <Link className="mx-lg-5" to='/login'><span style={styles.logoutButton} onClick={handleLogout}>Logout</span></Link>
         </ul>
       </nav>
 
@@ -42,7 +43,7 @@ function App() {
         <Routes token={token} setToken={setToken} />
       </div>
 
-      <MDBFooter />
+      <Footer className="footer" />
 
     </div>
   );

@@ -25,17 +25,25 @@ const ShowsCard = (props) => {
       .catch((err) => console.log(err));
   }
 
-
   // let date = new Date(props.show.showdate).toDateString();
   return (
-    <>
-      <h4>{props.show.showdate.split('T')[0]} - {props.show.artist} - {props.show.venue} - {props.show.location}</h4>
-      {/* <div dangerouslySetInnerHTML={{ __html: props.show.shownotes }} /> */}
-      <button onClick={() => props.deleteShow(props.show._id)}>Delete</button>{'  '}
-      <Link to={`/editshow/${props.show._id}`}><button>Update</button></Link>{'  '}
-      <button onClick={handleAttendShow}>Attended</button>{'  '}
+    <div className="container-md">
+      <div className="d-flex align-center">
+        <button className="btn btn-sm btn-success text-black-50 shadow-2-strong mx-3" onClick={handleAttendShow}>Attended</button>
+
+        <h6>{props.show.showdate.split('T')[0]} - {props.show.artist} - {props.show.venue} - {props.show.location}</h6>
+      </div>
+
+      <div>
+        <p>{props.show.shownotes}</p>
+        <div className="">
+          <button className="btn btn-sm btn-danger text-black mx-1 shadow-2-strong" onClick={() => props.deleteShow(props.show._id)}>Delete</button>
+
+          <Link to={`/editshow/${props.show._id}`}><button className="btn btn-sm btn-info text-black shadow-2-strong mx-1">Update</button></Link>
+        </div>
+      </div>
       <hr />
-    </>
+    </div>
   );
 };
 

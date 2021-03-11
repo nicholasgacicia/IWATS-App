@@ -40,10 +40,10 @@ class ShowsPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <>
         <h1>Shows Index</h1>
         <ShowsList shows={this.state.shows} deleteShow={this.handleDeleteShow} />
-      </div>
+      </>
     );
   }
 };

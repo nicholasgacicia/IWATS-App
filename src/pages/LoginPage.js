@@ -43,7 +43,7 @@ function LoginPage({ setToken }) {
 
   return (
     <div>
-      <h1>Login</h1>
+      <h1 className="mt-5">Login</h1>
       {error && <h2>{error}</h2>}
 
       <form onSubmit={handleSubmit}>
@@ -58,7 +58,7 @@ function LoginPage({ setToken }) {
           />
         </div>
 
-        <div>
+        <div className="m-2">
           <label htmlFor="password">Password: </label><br />
           <input
             type="password"
@@ -69,7 +69,7 @@ function LoginPage({ setToken }) {
           />
         </div>
 
-        <button type="submit">Login</button>
+        <button type="submit" className="btn btn-close-white m-2">Login</button>
       </form>
     </div>
   );

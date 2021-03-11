@@ -1,3 +1,31 @@
+/* @import-normalize; */
+
 .App {
   text-align: center;
+  min-height: 100vh;
+  background-color: #5f6369;
+  color: antiquewhite;
+}
+
+nav {
+  background-color: #323232;
+  color: #f0f8ff !important;
+  margin-top: 1em;
+}
+
+footer {
+  background-color: #323232;
+  color: aliceblue;
+}
+
+ul {
+  list-style-type: none;
+}
+
+Link {
+  color: antiquewhite;
+}
+
+a {
+  color: antiquewhite;
 }

@@ -147,10 +147,10 @@ $ bower install
 
 ---
 
-## FAQ
-
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
+## Project Shoutouts and reflections
+Motivation for this project
+Shout outs to fellow classmates
+Words of wisdom moving forward
 
 ---
 

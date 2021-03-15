@@ -20,6 +20,9 @@ const ShowsCard = (props) => {
       })
       .then((jsonData) => {
         console.log(jsonData);
+        if (!jsonData.message) {
+          alert('You are not logged in.  Please login to add a show.');
+        }
         alert(jsonData.message);
       })
       .catch((err) => console.log(err));

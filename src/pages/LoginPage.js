@@ -69,7 +69,7 @@ function LoginPage({ setToken }) {
           />
         </div>
 
-        <button type="submit" className="btn btn-close-white m-2">Login</button>
+        <button type="submit" className="btn btn-primary shadow-2-strong m-2">Login</button>
       </form>
     </div>
   );

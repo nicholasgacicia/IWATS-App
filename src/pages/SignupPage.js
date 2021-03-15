@@ -62,7 +62,7 @@ function SignupPage() {
             value={name}
             onChange={(event) => setName(event.target.value)}
           />
-        </div>
+        </div><br />
 
         <div>
           <label htmlFor="email">Email: </label><br />
@@ -74,7 +74,7 @@ function SignupPage() {
             value={email}
             onChange={(event) => setEmail(event.target.value)}
           />
-        </div>
+        </div><br/>
 
         <div>
           <label htmlFor="password">Password: </label><br />
@@ -85,7 +85,7 @@ function SignupPage() {
             value={password}
             onChange={(event) => setPassword(event.target.value)}
           />
-        </div>
+        </div><br />
 
         <div>
           <label htmlFor="password2">Confirm Password: </label><br />
@@ -96,9 +96,10 @@ function SignupPage() {
             value={password2}
             onChange={(event) => setPassword2(event.target.value)}
           />
-        </div>
+        </div><br />
 
-        <button type="submit">Signup</button>
+        <button className="btn btn-primary shadow-2-strong"
+          type="submit">Signup</button>
       </form>
     </div>
   );

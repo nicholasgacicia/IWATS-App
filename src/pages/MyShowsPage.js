@@ -34,7 +34,7 @@ function MyShowsPage() {
 
   return (
     <div>
-      <h1>{profile.name}'s Shows</h1>
+      <h1>My Shows</h1>
 
 
     </div>

@@ -1,12 +1,30 @@
-# YEMStats-App
+[![Phish.net Logo](./src/img/ph_logo.png)](https://git.generalassemb.ly/nicholasgacicia) [![Phish.net Logo](./src/img/ph_logo.png)](https://git.generalassemb.ly/nicholasgacicia) [![Phish.net Logo](./src/img/ph_logo.png)](https://git.generalassemb.ly/nicholasgacicia) [![Phish.net Logo](./src/img/ph_logo.png)](https://git.generalassemb.ly/nicholasgacicia) [![Phish.net Logo](./src/img/ph_logo.png)](https://git.generalassemb.ly/nicholasgacicia)
 
-> YEMStats, an acronym for "You Enhoy My Stats" (after famous Phish song) is a full-stack MERN application that enables concert go-ers to track the live performances that they have attended and listened to, supply their rating, and view their statistics.  Specifically designed for fan's of the band Phish, users can create posts on individual shows, setlists or songs and view the comments left by others on the same subject.  Future updates will allow users to view their detailed statistics, compare stats with others, show off their band loyalty with acheivable badges on their profile pages, and even check-in and locate their friends real-time at the venue on the day of the show.
+# I Was @ That Show
+
+#### General Assembly SEI 1207
+
+*by: Nicholas Gacicia*
+
+> ##### GitHub Repos
+> React App: https://git.generalassemb.ly/nicholasgacicia/YEMStats-App
+  > Express API: https://git.generalassemb.ly/nicholasgacicia/YEMStats-API
+
+> Show Tracker and Stats Platform
+
+> I Was @ That Show is a full-stack MERN application that enables concert attendees to track the live performances that they have attended.  They will have the ability to look through all shows ever played by their favorite artist, view the shows setlist, and read the official review.  Specifically designed for fan's of the band Phish, users can create posts on individual shows, setlists or songs and view the comments left by others.  Future updates will allow users to view their detailed statistics, compare stats with others, show off their band loyalty with acheivable badges on their profile pages, and even check-in and locate their friends real-time at the venue on the day of the show.
 
 > A community for live music fans to share their memories and coordinate future events with others like themselves.
 
-> YEMStats, Phish, live music, stat tracking, helping friendly reprise, HFApp
+> Keywords: IWas@ThatShow, Phish, Music, Stats, Tracker, HelpingFriendlyApp, Weekapaug
 
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-ics-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-7/7-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
+[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)
+
+ [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger)
+
+ [![License](http://img.shields.io/:license-ics-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+ [![Badges](http://img.shields.io/:badges-4/4-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
 
 ## Table of Content
 
@@ -33,7 +51,7 @@
 ---
 ## Wire Frames
 
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
+[![INSERT YOUR GRAPHIC HERE](And the URL here)]()
 
 ---
 
@@ -138,12 +156,12 @@ $ bower install
 
 ---
 
-## Creator
+## Team
 
-|                 <a href="https://git.generalassemb.ly/nicholasgacicia" target="_blank">**Nicholas Gacicia**</a>                 |                 <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a>                 |                 <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a>                 |
-| :--------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: |
-| [![Nicholas Gacicia](https://i.imgur.com/LcK8J3a.jpg?1)](https://git.generalassemb.ly/nicholasgacicia) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) |
-|         <a href="https://git.generalassemb.ly/nicholasgacicia" target="_blank">`git.generalassemb.ly/nicholasgacicia`</a>         |         <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a>         |         <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a>         |
+| <a href="https://git.generalassemb.ly/nicholasgacicia" target="_blank">**Nicholas Gacicia** <br> SEIR Student</a> | <a href="https://git.generalassemb.ly/kbbushman" target="_blank">**Kenneth Bushman** <br> Instructor</a> | <a href="https://git.generalassemb.ly/msolorio-ga" target="_blank">**Michael Solorio** <br> Associate Instructor</a> |
+| :---------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
+|      [![Nicholas_Gacicia](https://i.imgur.com/LcK8J3a.jpg?1)](https://git.generalassemb.ly/nicholasgacicia)       |     [![Kenneth_Bushman](https://i.imgur.com/rAfXTA4.jpg?1)](https://git.generalassemb.ly/kbbushman)      |          [![Michael_Solorio](https://i.imgur.com/h8Gz1Xs.jpg?1)](https://git.generalassemb.ly/msolorio-ga)           |
+| <a href="https://git.generalassemb.ly/nicholasgacicia" target="_blank">`git.generalassemb.ly/nicholasgacicia`</a> |  <a href="https://git.generalassemb.ly/kbbushman" target="_blank">`git.generalassemb.ly/kbbushman`</a>   |      <a href="https://git.generalassemb.ly/msolorio-ga" target="_blank">`git.generalassemb.ly/msolorio-ga`</a>       |
 
 ---
 

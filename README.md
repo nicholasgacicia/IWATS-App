@@ -6,9 +6,12 @@
 
 *by: Nicholas Gacicia*
 
+> ##### URL
+> https://IWATS.herokuapp.com/
+
 > ##### GitHub Repos
 > React App: https://git.generalassemb.ly/nicholasgacicia/YEMStats-App
-  > Express API: https://git.generalassemb.ly/nicholasgacicia/YEMStats-API
+> Express API: https://git.generalassemb.ly/nicholasgacicia/YEMStats-API
 
 > Show Tracker and Stats Platform
 
@@ -35,22 +38,74 @@
 
 ## Dependencies
 
-#### YEMStats - App
--     "bootstrap": "^4.6.0",
-    "mdb-react-ui-kit": "^1.0.0-alpha4",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.5.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-        "@material-ui/core": "^4.11.3",
-    "@material-ui/icons": "^4.11.2",
-#### YEMStats - API
-- "body-parser" v1.19.0
-- "express": v4.17.1
-- "mongodb": v3.6.4
-- "mongoose": v5.11.19
-- "nodemon": v2.0.7 (dev)
+###### YEMStats - App
+- React: v17.0.1
+- React-DOM: v17.0.1
+- React-Router-DOM: v5.2.0
+- React-Scripts: v4.0.3
+- React-Bootstrap: v1.5.1
+- Bootstrap: v4.6.0
+- MDB-React-UI-Kit: v1.0.0-alpha4
+- @Material-UI/Core: v4.11.3
+- @Material-UI/Icons: v4.11.2
+###### YEMStats - API
+- Express: v4.17.1
+- MongoDB: v3.6.4
+- Mongoose: v5.11.19
+- Body-Parser: v1.19.0
+- CORS: v2.8.5
+- BCryptJS: v2.4.3
+- DotEnv: v8.2.0
+- JSONWebToken: v8.5.1v
+- Nodemon: v2.0.7 (dev)
+
+###### Deployment
+- GitHub
+- Node.js
+- MongoDB Atlas
+- Heroku
+
+---
+## Installation
+
+### Clone
+
+- Clone the frontend app repo to your local machine using:
+```shell
+$ git clone https://github.com/nicholasgacicia/IWATS-App.git
+```
+
+- Clone the backend API repo to your local machine using:
+```shell
+$ git clone https://github.com/nicholasgacicia/IWATS-API.git
+```
+
+### Install Dependencies
+
+- Update and install npm first:
+
+```shell
+$ brew update
+$ brew install -g npm
+```
+
+> Now run npm in each repository folder to install dependencies:
+
+```shell
+$ npm i --save
+```
+
+> Open the App directory in one terminal window and run the frontend app locally:
+
+```shell
+$ npm start
+```
+
+> Open the API directory in a second terminal window and run the backend server locally:
+
+```shell
+$ npm run dev
+```
 
 ---
 ## Wire Frames

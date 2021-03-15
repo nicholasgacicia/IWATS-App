@@ -18,13 +18,9 @@
 
 > Keywords: IWas@ThatShow, Phish, Music, Stats, Tracker, HelpingFriendlyApp, Weekapaug
 
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=plastic)](https://img.shields.io/badge/build-passing-brightgreen?style=plastic) [![Coverage Status](https://img.shields.io/badge/coverage-100%25-brightgreen?style=plastic)](https://img.shields.io/badge/coverage-100%25-brightgreen?style=plastic) [![Vulnerabilities](https://img.shields.io/badge/snyk%20vulnerabilities-0-brightgreen?style=plastic)](https://img.shields.io/badge/snyk%20vulnerabilities-0-brightgreen?style=plastic) [![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen?style=plastic)](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen?style=plastic) [![NPM Version](https://img.shields.io/badge/npm-v7.6.1-blue?style=plastic)](https://img.shields.io/badge/npm-v7.6.1-blue?style=plastic) [![License](http://img.shields.io/:license-ICS-blue.svg?style=plastic)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-7/7-ff6799.svg?style=plastic)](https://github.com/badges/badgerbadgerbadger)
 
- [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger)
-
- [![License](http://img.shields.io/:license-ics-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
- [![Badges](http://img.shields.io/:badges-4/4-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
+[![GitHub Stars](https://img.shields.io/github/stars/nicholasgacicia/IWATS-App?style=social)](https://github.com/nicholasgacicia/IWATS-App) [![GitHub Forks](https://img.shields.io/github/forks/nicholasgacicia/IWATS-App?style=social)](https://github.com/nicholasgacicia/IWATS-App) [![GitHub Follow](https://img.shields.io/github/followers/nicholasgacicia?style=social)](https://github.com/nicholasgacicia) [![Reddit Karma](https://img.shields.io/reddit/user-karma/combined/TheNickCheech?style=social)](https://www.reddit.com/user/TheNickCheech) [![Twitter Follow](https://img.shields.io/twitter/follow/nicholasgacicia?style=social)](https://twitter.com/NicholasGacicia)
 
 ## Table of Content
 
@@ -40,7 +36,15 @@
 ## Dependencies
 
 #### YEMStats - App
--
+-     "bootstrap": "^4.6.0",
+    "mdb-react-ui-kit": "^1.0.0-alpha4",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.5.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+        "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
 #### YEMStats - API
 - "body-parser" v1.19.0
 - "express": v4.17.1

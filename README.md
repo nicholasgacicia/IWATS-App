@@ -66,155 +66,102 @@
 - Heroku
 
 ---
+## Wire Frames
+
+[![Wire Frames](/src/img/IWATS-Wireframe.png)]()
+
+---
+
+## ERD
+
+[![ERD](/src/img/IWATS-ERD.png)]()
+
+---
+
 ## Installation
 
-### Clone
+#### Clone
+- Clone this frontend repo to your local machine
 
-- Clone the frontend app repo to your local machine using:
 ```shell
 $ git clone https://github.com/nicholasgacicia/IWATS-App.git
+$ cd IWATS-App
+$ npm i
 ```
 
-- Clone the backend API repo to your local machine using:
+- Clone the router API repo to your local machine
+
 ```shell
 $ git clone https://github.com/nicholasgacicia/IWATS-API.git
+$ cd IWATS-API
+$ npm i
 ```
 
-### Install Dependencies
+#### Run
 
-- Update and install npm first:
-
-```shell
-$ brew update
-$ brew install -g npm
-```
-
-> Now run npm in each repository folder to install dependencies:
-
-```shell
-$ npm i --save
-```
-
-> Open the App directory in one terminal window and run the frontend app locally:
+> Open the frontend App directory in one terminal window and run locally:
 
 ```shell
 $ npm start
 ```
 
-> Open the API directory in a second terminal window and run the backend server locally:
+> Open a second terminal window and navigate to the API root directory. Run the backend server locally:
 
 ```shell
 $ npm run dev
 ```
 
 ---
-## Wire Frames
-
-[![INSERT YOUR GRAPHIC HERE](And the URL here)]()
-
----
 
 ## User Stories
 
-> GIF Tools
+##### Homepage
+1. Start on the homepage with GitFit name & logo in header. In the body, offer the user the options to either:
 
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
+##### Login Page/Box
 
-**Recordit**
+   * Login - with existing User ID (using Email & Password)
 
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
+      > Redirect to userDashboard
 
-**ttystudio**
+##### Register New User Account
 
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
+   * Register - new user account
 
----
+     > Presents new user registration form (Email & Password = required)
 
-## ERD
+      * userInfo: firstName, lastName, dob, gender, height (optional)
+
+      > Allows initial activityData to be logged to initialization healthInsights display (optional)
+
+        * userGoals: weightGoal, stepsGoal, sleepGoal
+
+        * activityLog: logDate, logWeight(lbs), logSteps, logSleep(min)
+
+2. After successfully logging in, display userDashboard which displays activity history and goal tracking
+
+    > healthInsights - (a grid of tables, charts and/or graphs displaying the user's progress towards defined goals)
+
+3. Offer 2 action buttons in Nav before healthInsights
+
+    > Log Daily Activity
+
+      * logDate- default Date.now but ability to enter data for a past (future?) date as well.
+
+      * logWeight- weight measured on logDate
+
+      * logSteps- total daily steps taken on logDate
+
+      * logSleep- total minutes slept the night before logDate
 
 
+          * Re-directs to userDashboard with updated healthInsights to include the new logged data
 
----
+    > View & Update userSettings:
 
-## Example (Optional)
-
-```javascript
-// code away!
-
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
-```
-
----
-
-## Installation
-
-- All the `code` required to get started
-- Images of what it should look like
-
-### Clone
-
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
-
-### Setup
-
-- If you want more syntax highlighting, format your code like this:
-
-> update and install this package first
-
-```shell
-$ brew update
-$ brew install fvcproductions
-```
-
-> now install npm and bower packages
-
-```shell
-$ npm install
-$ bower install
-```
-
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
+      * Present the user a form allowing them to ability to edit thier personal userInfo and update userGoals
 
 ---
-
-## Features
-## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
-
-- Going into more detail on code and technologies used
-- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
-
----
-
-## Contributing
-
-> To get started...
-
-### Step 1
-
-- **Option 1**
-    - 🍴 Fork this repo!
-
-- **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
-
-### Step 2
-
-- **HACK AWAY!** 🔨🔨🔨
-
-### Step 3
-
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
-
----
-
 ## Team
 
 | <a href="https://git.generalassemb.ly/nicholasgacicia" target="_blank">**Nicholas Gacicia** <br> SEIR Student</a> | <a href="https://git.generalassemb.ly/kbbushman" target="_blank">**Kenneth Bushman** <br> Instructor</a> | <a href="https://git.generalassemb.ly/msolorio-ga" target="_blank">**Michael Solorio** <br> Associate Instructor</a> |
@@ -225,15 +172,15 @@ $ bower install
 ---
 
 ## Project Shoutouts and reflections
-Motivation for this project
-Shout outs to fellow classmates
-Words of wisdom moving forward
+- Motivation for this project
+- Shout outs to fellow classmates
+- Words of wisdom moving forward
 
 ---
 
 ## License
 
-[![License](http://img.shields.io/:license-ics-blue.svg?style=flat-square)](http://badges.ics-license.org)
+[![License](http://img.shields.io/:license-ics-blue.svg?style=plastic)](http://opensource.org/licenses/ics-license.php)
 
 - **[ICS license](http://opensource.org/licenses/ics-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
+- Copyright 2021 © <a href="http://www.NicholasGacicia.com" target="_blank">Nicholas Gacicia</a>
